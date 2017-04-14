@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Knowing</string>
+    <string name="app_name">Алгем</string>
+    <string name="beSmart">Становись умнее</string>
+    <string name="algebra">Алгебра</string>
+    <string name="vk">Группа в VK</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="site">Наш сайт</string>
+    <string name="geometric">Геометрия</string>
 </resources>

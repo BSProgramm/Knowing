@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer1"
+            android:icon="@mipmap/calculator"
+            android:title="@string/algebra" />
+        <item
+            android:id="@+id/drawer2"
+            android:icon="@mipmap/geom"
+            android:title="@string/geometric" />
+    </group>
+
+    <item android:title="@string/feedback">
+        <menu>
+            <item
+                android:id="@+id/drawer3"
+                android:icon="@mipmap/vk"
+                android:title="@string/vk" />
+            <item
+                android:id="@+id/drawer4"
+                android:icon="@mipmap/cursor"
+                android:title="@string/site" />
+        </menu>
+    </item>
+
+</menu>
