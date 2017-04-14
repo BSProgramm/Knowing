@@ -6,4 +6,7 @@
     <string name="feedback">Обратная связь</string>
     <string name="site">Наш сайт</string>
     <string name="geometric">Геометрия</string>
+    <string name="navigation_drawer_open">Открыть</string>
+    <string name="navigation_drawer_close">Закрыть</string>
+    <string name="exit">Нажмите назад еще раз, чтобы выйти</string>
 </resources>
