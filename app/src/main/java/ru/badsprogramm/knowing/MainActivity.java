@@ -54,7 +54,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Algebra(), "Алгебра");
+        adapter.addFragment(new SubjectFragment(), "Алгебра1");
+        adapter.addFragment(new SubjectFragment(), "Алгебра2");
+        adapter.addFragment(new SubjectFragment(), "Алгебра3");
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setTabTextColors(Color.LTGRAY, Color.WHITE);
@@ -84,15 +86,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id){
             case R.id.drawer1:
                 mToolbar.setTitle(R.string.algebra);
-                adapter.addFragment(new Algebra(), "Алгебра");
-                adapter.addFragment(new Algebra(), "Алгебра");
-                adapter.addFragment(new Algebra(), "Алгебра");
+                adapter.addFragment(new SubjectFragment(), "Алгебра");
+                adapter.addFragment(new SubjectFragment(), "Алгебра2");
+                adapter.addFragment(new SubjectFragment(), "Алгебра3");
                 setFragment(adapter);
+                tabLayout.setTabMode(TabLayout.MODE_FIXED);
                 break;
             case R.id.drawer2:
                 mToolbar.setTitle(R.string.geometric);
-                adapter.addFragment(new Geometric(), "Геометрия");
+                adapter.addFragment(new SubjectFragment(), "Геометрия");
                 setFragment(adapter);
+                tabLayout.setTabMode(TabLayout.MODE_FIXED);
                 break;
             case R.id.drawer3:
                 Uri address = Uri.parse("http://vk.com/badsprogramm");
@@ -129,6 +133,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void setFragment(ViewPagerAdapter adapter) {
+        viewPager.setAdapter(null);
         viewPager.setAdapter(adapter);
         if (adapter.getCount() == 1) tabLayout.setVisibility(GONE);
         else{

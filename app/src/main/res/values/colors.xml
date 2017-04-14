@@ -4,4 +4,15 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="foreground">@android:color/white</color>
+
+    <!--Card Color-->
+    <color name="cc_green">#55bd9c</color>
+    <color name="cc_green_d">#479e82</color>
+    <color name="cc_blue">#3598db</color>
+    <color name="cc_blue_d">#2977ac</color>
+    <color name="cc_orange">#e77d2f</color>
+    <color name="cc_orange_d">#c16928</color>
+    <color name="cc_red">#e64d3d</color>
+    <color name="cc_red_d">#be4033</color>
+    <color name="cc_progress_bar">#046104</color>
 </resources>
